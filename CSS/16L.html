@@ -1,0 +1,107 @@
+<!-- 6. Create a webpage that displays your favourite quotations in a web page just above images.
+You have to use border, height, width, margin, padding, outline properties of CSS. Also use
+text and font properties to add effects in text to display quotations. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16</title>
+    <link href="16L.css" type="text/css" rel="stylesheet" />
+    <style>
+
+        .container {
+            flex-flow: row wrap;
+
+            width: 100%;
+            height: 100%;
+            border: solid 2px rgb(45, 27, 206);
+            /* make it flexible in border */
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            overflow:hidden;
+            
+        }
+        
+        .container>div {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border: solid 2px rgb(206, 27, 27);
+            margin: 30px 30px 50px 10px;
+            background-position: cover; 
+            overflow: hidden;
+            top: 20px;
+            /* for h3 as flexible is done at parent, content will not be flexible to itself*/
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            outline: groove rgb(82, 81, 3) 10px;
+            outline-offset: 10px;
+
+        }
+
+        div>h3 {
+            color: rgb(151, 192, 76);
+            font-size: 30px;
+            position: absolute;
+            text-align: center;
+            /* right/-left bottom/-top shadowpower Shadowcolor */
+         text-shadow: 5px 5px 3px black;
+        }
+
+        div>img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -5;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/11.jpg" alt="">
+        <div>
+            <h3 style="text-shadow: 5px 5px 4px rgb(204, 58, 58);">If you're a true warrior, competition doesn't scare you. </h3>
+            <img src="images/5.jpg" alt="">
+        </div>
+
+        <div>
+            <h3 style="color:rgb(220, 124, 212)">The clearest way into the Universe is through a forest wilderness.</h3>
+            <img src="images/25.jpg" alt="">
+        </div>
+        <div>
+            <h3 style="color:rgb(239, 129, 38)">Music, once admitted to the soul, becomes a sort of spirit, and never dies.</h3>
+            <img src="images/34.jpg" alt="">
+        </div>
+        <div>
+            <h3 style="color:rgb(205, 208, 42)">There is an eternal love between the water drop and the leaf.</h3>
+            <img src="images/33.jpg" alt="">
+        </div>
+        <div>
+            <h3 style="color:rgb(66, 173, 60)">There is an eternal love between the water drop and the leaf.</h3>
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div>
+            <h3 style="color:rgb(27, 4, 28);text-shadow: 5px 5px 4px rgb(204, 58, 58)"">Some days you tame the tiger, and some days the tiger has you for lunch.</h3>
+            <img src="images/2.jpg" alt="">
+        </div>
+        <div>
+            <h3 style="color:rgb(192, 55, 144)">Keep your face to the sun and you will never see the shadows.</h3>
+            <img src="images/3.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

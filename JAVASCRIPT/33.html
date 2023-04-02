@@ -1,0 +1,66 @@
+<!-- create an image gallery that displays image icons. When a user click onany image it should be displayed with full height or width -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            background-color: rgb(67, 70, 70);
+            display: flex;
+            padding: 20px;
+        }
+        .slider{
+            width: 30%;
+            height: 100%;
+            background-color: rgb(20, 84, 64);
+            margin: auto;
+        }
+        .slider>img{
+            /* height: 100px; */
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+
+        }
+        .display{
+            width: 70%;
+            height: 100%;
+            background-color: rgb(223, 210, 194);
+            border: solid 2px rgb(162, 193, 215);
+        }
+        .display>img
+        {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <img src="images/1.jpg" alt="" onclick="change(this)">
+            <img src="images/10.jpg" alt="" onclick="change(this)">
+            <img src="images/12.jpg" alt="" onclick="change(this)">
+        </div>
+        <div class="display">
+            <img src="" alt="" id="cont">
+        </div>
+    </div>
+    <script>
+        x=document.getElementById("cont");
+        function change(ob)
+        {
+            x.src=ob.src;
+        }
+    </script>
+</body>
+</html>

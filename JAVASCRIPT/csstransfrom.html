@@ -1,0 +1,64 @@
+<!-- 18. Create an infinite animation of an element moving in a square pattern. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        .container{
+            height:100px;
+            width: 500px;
+            background-color: rgb(169, 220, 106);
+            
+           margin: 70px 0px 0px 400px;
+           border: solid 3px black;
+        }
+        .container>img{
+        height: 70px;
+        width: 70px;
+        background-color: rgb(8, 67, 10);
+        border: solid 2px rgb(189, 29, 154);
+        float: left;
+        margin:20px 20px;
+        /* imp for animation */
+        position: relative;  
+        
+        }
+        #d1{
+            animation-name: animat1;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+        }
+        @keyframes animat1
+        {
+            from{
+                    top: -50px;
+                    left:-40px;
+            }
+            50%{
+                top:-50px;
+                    left:420px;
+            }
+            to{
+                top:-50px;
+                left: -40px;
+            }
+        }
+
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div id="d1">1</div> -->
+        <img src="images/1.jpg" alt="" id="d1">
+    </div>
+    
+</body>
+</html>

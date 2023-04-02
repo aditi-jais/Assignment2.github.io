@@ -1,0 +1,87 @@
+<!-- 9.	Create a user feedback page which asks questions about a software product. You are required to use checkbox, radio buttons, and drop-down, textarea and various text input type for this. Structure the web page using HTML table. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+    <form method=get action="https://www.priorityuc.com/thank-you" autocomplete="off">
+
+        <table border="0">
+            <tr>
+                <td><label for="">Username</label></td>
+                <td><input type="text" name="uname" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="email" name="uemail" placeholder="Enter your Email ID" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Phone No.</label></td>
+                <td><input type="phonenumber" name="unumber" placeholder="Enter your Phone No."></td>
+            </tr>
+            <tr>
+                <td><label>Select which service you are currently receiving</label></td>
+                <td>
+                    <select name="uservice" id="">
+                        <option value="PersonalCare">Personal Care</option>
+                        <option value="LifeSkillTraining">Life Skill Training</option>
+                        <option value="Domestic">Domestic</option>
+                        <option value="Gardening/HomeMaintenance">Gardening/Home Maintenance</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="">Gender of staff</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" value="F">Female</td>
+                <td><input type="radio" name="gender" value="M">Male</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="">Are you enjoying our services?</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="enjoy" id="Y">Yes</td>
+                <td><input type="checkbox" name="enjoy" id="N">No</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="">How would you rate overall service you receive from our staff</label></td>
+            </tr>
+            <tr>
+                <td colspan="2">1<input type="range" name="" id="" min=1 max="5" name="overallS">5</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="">How would you rate level of respect and courtesy from the staff</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">1<input type="range" name="" id="" min=1 max="5" name="respect">5</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="">Anything you want to say.</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="feedback" id="" cols="50" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type=reset value=Clear />
+                </td>
+                <td>
+                    <input type=submit value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
